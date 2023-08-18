@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="/week6/assets/login-1d001534.css">
 </head>
 
-<body class="d-flex flex-column min-vh-100">
+<body>
     <nav>
     <section class="py-12 py-md-4 border-bottom border-2">
         <div class="container d-flex justify-content-between">
@@ -86,31 +86,77 @@
         </ul>
     </div>
 </nav>
-    <div class="container col-lg-4 flex-grow-1 mt-4 mt-lg-60">
-        <div class="text-center">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANgSURBVHgB7ZvdddpAEIUHBM+og2w6UAm4EzqIO4g7cDrAHTgdkA6wK0AdGL/xACh38K7OsJHE2hHMSvCds0cSEovmzuzfSBDdUCW1RY0h6ZKhGFJEVYAkSQxKRoqMSJGiKAwpNwFVAQaDAXv/jRRRFQBMEAXfSBFtAQyigK4WdIAFF1JEcxSQnZ8hJTQFMBQBUUTAaDQypISaADwJcvt2PqCCmgAwOq3avzSxdII3AUiJKATAZGhCSqgJAKNVF0GO1gRArz6jz43t0uuGwpna32qF1gSAR3Pc2Go4HP6k85Ch/gWX3W73h2LE3iDP71d0wquY/CzdWsBeXwtE/eGuxfceKFbG43EmjHprClU2OkCAVIhaQIgVxQ5u8l4YVtQ1iQABjLwG9XDixFAXkF6zYftYcU2TAMY7X7TZ8V2ClMPVM2AuL7BNpGwu4tQ/xkfd7hswFSIs3Envc5cUqTL+F3UYUxcJVQLA2Bfv8yfqAZUi+AKgPNdFSx9gEZYVRteVJ+ojFV6uKnO6IKE5aSO27M3DQ03eIpkxkdf42R276PnqwmeN+tbyGPW547U9ft/v94d9u83tObdtxAmQWgMydEQZG4XCT21S/IChDgM7cl6n0IeYrxCJ97m88GflYgiG87STrIqpULrz2JTbmiOWbcSUvbQttAmk+JLhijjEbYWyCZRh7s7J73517W/D/8gR1ptMbo/LJsBO4/Nw5uHcZrPJKSa4dw/oBJ+pjyBa5qHDIA+Z1JWFTwj+4qhmOPSj42ROoRP4nscx976VU+HeiQBjHz3jS4OqBLCfL3ohAidC6oxnkvrlcF0kRJFFDgI3PGsy3l6z8gw8gpfBXV0cGendKuOZJCAnyIkQT8h7ih3PMPZaGnDdqqG+mRSUE68UK7Ld40YbvZUcJzyXJ6qWOYVom4IRN3jSS15vH2SUaxLYTqkl2nw0NsU8/A5Pbe7oY6XVOtvt9gH1f9d8oaI1ENJyqPtNSmi/LO1Qe1tUU4BymYuQficlohCAAlJX5+ImACkhU26a6Tc1ATCc5W5fpLkujmYTyN0Oxver7AMkOV0jfjJEA+0/TOSkjPZ/hvxHXxdHtQ/AA41XbNRmgYx2E+AIyEkR7SZwlmXzZ0hIEXifR4KNfWJ7lfzPuwM32uAvhWS8ZdBSZJIAAAAASUVORK5CYII=" alt="sparkler" class="img-fluid mb-3 login__sparkleImg">
-            <h2 class="mb-3 ff-notoSerif fw-bold fs-4">會員登入</h2>
-        </div>
-        
-        <form>
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">帳號</label>
-                <input type="email" class="form-control border-2 px-3 py-2" id="exampleInputEmail1" placeholder="請輸入帳號">
-            </div>
-            <div class="mb-4 mb-lg-32">
-                <label for="exampleInputPassword1" class="form-label">密碼</label>
-                <input type="password" class="form-control border-2 px-3 py-2" id="exampleInputPassword1" placeholder="請輸入密碼">
-            </div>
-            <button type="submit" class="btn btn-primary d-flex justify-content-center align-items-center w-100 py-3 py-lg-2 fs-lg-20">
-                <p class="me-1 fw-bold">登入</p>
-                <span class="material-symbols-outlined ms-1">keyboard_double_arrow_right</span>
-            </button>
-        </form>
-    </div>
+    <div class="container mt-4 mt-lg-60">
+        <div class="row">
+            <div class="col-lg-6 mx-auto">
+                <ol class="list-unstyled d-flex justify-content-between mb-4 mb-lg-5 checkout__payList position-relative">
+                    <li class="d-flex flex-column align-items-center">
+                        <p class="checkout__num d-flex justify-content-center align-items-center mb-1 mb-lg-2 bg-primary text-secondary">1</p>
+                        <p class="ff-notoSerif fw-bold">訂單確認</p>
+                    </li>
+                    <li class="d-flex flex-column align-items-center">
+                        <p class="checkout__num d-flex justify-content-center align-items-center mb-1 mb-lg-2 border border-1">2</p>
+                        <p class="ff-notoSerif fw-bold">結帳付款</p>
+                    </li>
+                    <li class="d-flex flex-column align-items-center">
+                        <p class="checkout__num d-flex justify-content-center align-items-center mb-1 mb-lg-2 border border-1">3</p>
+                        <p class="ff-notoSerif fw-bold">訂單結果</p>
+                    </li>
+                </ol>
 
+                <section>
+                    <h2 class="mb-4 mb-lg-32 ff-notoSerif fw-bold fs-2 fs-lg-48 text-lg-center">返老還童-制服聯誼</h2>
+                    <table class="table table-hover align-middle mb-32 mb-lg-5 border-top border-2">
+                        <tbody>
+                            <tr>
+                                <th scope="row" class="ff-notoSerif fw-bold">日期</th>
+                                <td class="ff-notoSans text-end">2023/5/12</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="ff-notoSerif fw-bold">票種</th>
+                                <td class="text-end">改頭換面票（含大改造）</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="ff-notoSerif fw-bold">票價</th>
+                                <td class="ff-notoSans text-end">$8000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section>
+                    <div class="text-center">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANgSURBVHgB7ZvdddpAEIUHBM+og2w6UAm4EzqIO4g7cDrAHTgdkA6wK0AdGL/xACh38K7OsJHE2hHMSvCds0cSEovmzuzfSBDdUCW1RY0h6ZKhGFJEVYAkSQxKRoqMSJGiKAwpNwFVAQaDAXv/jRRRFQBMEAXfSBFtAQyigK4WdIAFF1JEcxSQnZ8hJTQFMBQBUUTAaDQypISaADwJcvt2PqCCmgAwOq3avzSxdII3AUiJKATAZGhCSqgJAKNVF0GO1gRArz6jz43t0uuGwpna32qF1gSAR3Pc2Go4HP6k85Ch/gWX3W73h2LE3iDP71d0wquY/CzdWsBeXwtE/eGuxfceKFbG43EmjHprClU2OkCAVIhaQIgVxQ5u8l4YVtQ1iQABjLwG9XDixFAXkF6zYftYcU2TAMY7X7TZ8V2ClMPVM2AuL7BNpGwu4tQ/xkfd7hswFSIs3Envc5cUqTL+F3UYUxcJVQLA2Bfv8yfqAZUi+AKgPNdFSx9gEZYVRteVJ+ojFV6uKnO6IKE5aSO27M3DQ03eIpkxkdf42R276PnqwmeN+tbyGPW547U9ft/v94d9u83tObdtxAmQWgMydEQZG4XCT21S/IChDgM7cl6n0IeYrxCJ97m88GflYgiG87STrIqpULrz2JTbmiOWbcSUvbQttAmk+JLhijjEbYWyCZRh7s7J73517W/D/8gR1ptMbo/LJsBO4/Nw5uHcZrPJKSa4dw/oBJ+pjyBa5qHDIA+Z1JWFTwj+4qhmOPSj42ROoRP4nscx976VU+HeiQBjHz3jS4OqBLCfL3ohAidC6oxnkvrlcF0kRJFFDgI3PGsy3l6z8gw8gpfBXV0cGendKuOZJCAnyIkQT8h7ih3PMPZaGnDdqqG+mRSUE68UK7Ld40YbvZUcJzyXJ6qWOYVom4IRN3jSS15vH2SUaxLYTqkl2nw0NsU8/A5Pbe7oY6XVOtvt9gH1f9d8oaI1ENJyqPtNSmi/LO1Qe1tUU4BymYuQficlohCAAlJX5+ImACkhU26a6Tc1ATCc5W5fpLkujmYTyN0Oxver7AMkOV0jfjJEA+0/TOSkjPZ/hvxHXxdHtQ/AA41XbNRmgYx2E+AIyEkR7SZwlmXzZ0hIEXifR4KNfWJ7lfzPuwM32uAvhWS8ZdBSZJIAAAAASUVORK5CYII=" alt="sparklerImg" class="checkout__sparkleImg mb-3">
+                        <h3 class="mb-3 ff-notoSerif fw-bold fs-4">聯絡人資料</h3>
+                    </div>
+                    
+                    <form>
+                        <div class="mb-3">
+                            <label for="userName" class="form-label">聯絡人姓名</label>
+                            <input type="text" class="form-control border-2 px-3 py-2" id="userName" placeholder="請輸入聯絡人名稱">
+                        </div>
+                        <div class="mb-3 ff-notoSans">
+                            <label for="userEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control border-2 px-3 py-2" id="userEmail" placeholder="請輸入Email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="userPhone" class="form-label">手機</label>
+                            <input type="text" class="form-control border-2 px-3 py-2" id="userPhone" placeholder="請輸入手機號碼">
+                        </div>
+                        <button type="submit" class="btn btn-primary d-flex justify-content-center align-items-center w-100 py-3 py-lg-2  mb-3 fs-lg-20">
+                            <p class="me-1 fw-bold">確認表單資料</p>
+                            <span class="material-symbols-outlined ms-1">keyboard_double_arrow_right</span>
+                        </button>
+                        <a href="#" class="mb-5 mb-lg-60 text-center fs-18">取消購票</a>
+                    </form>
+                </section>
+            </div>
+        </div>
+
+        
+
+    </div>
     <footer class="py-4 py-lg-32 text-center border-top border-3">
     <p class="ff-notoSans fs-14 fs-lg-6">© 7TAO七逃. All Rights Reserved</p>
 </footer>    
-        
-    
 </body>
