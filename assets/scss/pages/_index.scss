@@ -3,7 +3,7 @@
         top: 16px;
         left: 40px;
 
-        @include md{
+        @include lg{
             top: 48px;
             left: 48px;
         }
@@ -23,7 +23,7 @@
     img{
         @include size(40px, 40px);
 
-        @include md{
+        @include lg{
             @include size(80px, 80px);
         }
     }

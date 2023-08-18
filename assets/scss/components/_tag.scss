@@ -1,4 +1,10 @@
 .badge{
     border: 1px solid $primary;
     border-left: 4px solid $primary;
+
+    &:hover{
+        background-color: $primary;
+        border-left: 4px solid $secondary;
+        color: white !important;
+    }
 }

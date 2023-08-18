@@ -1,0 +1,28 @@
+.eventDetail{
+    &__bannerImg{
+        width: 100%;
+        max-height: 180px;
+        object-fit: cover;
+
+        @include lg{
+            max-height: 550px;
+        }
+    }
+
+    &__time{
+        &::before{
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 50px;
+            height: 2px;
+            transform: translate(-50%, -50%) rotate(120deg);
+            background-color: $primary;
+
+            @include lg{
+                width: 100px;
+            }
+        }
+    }
+}

@@ -11,7 +11,7 @@
 <body class="d-flex flex-column min-vh-100">
     <%- include('./layout/header.ejs'); -%>
     <div class="container col-lg-4 flex-grow-1">
-        <div class="mt-4 mt-md-60 text-center">
+        <div class="mt-4 mt-lg-60 text-center">
             <img src="../assets/images/sparkler.png" alt="sparkler" class="img-fluid mb-3 login__sparkleImg">
             <h2 class="mb-3 ff-notoSerif fw-bold fs-4">會員登入</h2>
         </div>
@@ -21,19 +21,18 @@
                 <label for="exampleInputEmail1" class="form-label">帳號</label>
                 <input type="email" class="form-control border-2 px-3 py-2" id="exampleInputEmail1" placeholder="請輸入帳號">
             </div>
-            <div class="mb-4 mb-md-32">
+            <div class="mb-4 mb-lg-32">
                 <label for="exampleInputPassword1" class="form-label">密碼</label>
                 <input type="password" class="form-control border-2 px-3 py-2" id="exampleInputPassword1" placeholder="請輸入密碼">
             </div>
-            <button type="submit" class="btn btn-primary d-flex justify-content-center align-items-center w-100 py-3 py-md-2 fs-md-20">
+            <button type="submit" class="btn btn-primary d-flex justify-content-center align-items-center w-100 py-3 py-lg-2 fs-lg-20">
                 <p class="me-1 fw-bold">登入</p>
                 <span class="material-symbols-outlined ms-1">keyboard_double_arrow_right</span>
             </button>
         </form>
     </div>
-    <footer class="p-4 p-md-32 border-top border-3 ff-notoSans fs-14 fs-md-6 text-center">
-        © 7TAO七逃. All Rights Reserved
-    </footer>
+
+    <%- include('./layout/footer.ejs'); -%>
     
         
     <script type="module" src="../js/main.js"></script>

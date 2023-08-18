@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         ulContent += `
             <li class="col">
-                <a href="#">
+                <a href="./eventDetail.html">
                     <p class="pb-2 pb-md-12 fs-2 fs-md-48 border-bottom border-3 mb-3 mb-md-12">${item.date}</p>
                     <img src="${imageUrl}" alt="event${item.id}" class="img-fluid mb-2 mb-md-12 w-100 card__img">
                     <h4 class="mb-2 mb-md-12 fs-18 fs-md-4 fw-bold ff-notoSerif">${item.title}</h4>

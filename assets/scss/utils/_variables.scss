@@ -30,6 +30,7 @@ $font-sizes: map-merge(
     (
         14: 14px,
         18: 18px,
+        22: 22px,
         48: 48px,
         60: 60px,
         64: 64px
@@ -42,9 +43,12 @@ $spacers: map-merge(
     (
         10: 10px,
         12: 12px,
+        14: 14px,
         20: 20px,
+        30: 30px,
         32: 32px,
         36: 36px,
+        44: 48px,
         60: 60px
     )
 );
