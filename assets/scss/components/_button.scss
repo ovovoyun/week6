@@ -1,5 +1,11 @@
 button{
     &:hover{
         color: $secondary !important;
+
+        p{
+            color: $secondary !important;
+        }
     }
+
+
 }
