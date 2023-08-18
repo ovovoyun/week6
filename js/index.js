@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const data = [
         {
-            id: 1, 
+            id: "01", 
             date: "19 MAY 2023",
             url: "../assets/images/event/01.jpg",
             title: "邪典電影派對——房間",
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
             linkText: "開賣中"
         },
         {
-            id: 2, 
+            id: "02", 
             date: "23 MAY 2023",
             url: "../assets/images/event/02.jpg",
             title: "怪舞俱樂部",
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
             linkText: "檢視活動"
         },
         {
-            id: 3, 
+            id: "03", 
             date: "30 MAY 2023",
             url: "../assets/images/event/03.jpg",
             title: "哈利波特馬拉松",
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
             linkText: "開賣中"
         },
         {
-            id: 4, 
+            id: "04", 
             date: "12 June 2023",
             url: "../assets/images/event/04.jpg",
             title: "皮卡丘排球大賽",
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
             linkText: "開賣中"
         },
         {
-            id: 5, 
+            id: "05", 
             date: "25 June 2023",
             url: "../assets/images/event/05.jpg",
             title: "酒精路跑",
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
             linkText: "開賣中"
         },
         {
-            id: 6, 
+            id: "06", 
             date: "9 July 2023",
             url: "../assets/images/event/06.jpg",
             title: "展覽——我的房間",
@@ -60,17 +60,20 @@ document.addEventListener("DOMContentLoaded", function () {
     
     let ulContent = "";
     data.forEach(item => {
+        const imageUrl = new URL(`../assets/images/event/${item.id}.jpg`, import.meta.url).href;
+        const sparklerUrl = new URL("../assets/images/sparkler.png", import.meta.url).href;
+
         ulContent += `
             <li class="col">
                 <a href="#">
                     <p class="pb-2 pb-md-12 fs-2 fs-md-48 border-bottom border-3 mb-3 mb-md-12">${item.date}</p>
-                    <img src="${item.url}" alt="event${item.id}" class="img-fluid mb-2 mb-md-12 w-100 card__img">
+                    <img src="${imageUrl}" alt="event${item.id}" class="img-fluid mb-2 mb-md-12 w-100 card__img">
                     <h4 class="mb-2 mb-md-12 fs-18 fs-md-4 fw-bold ff-notoSerif">${item.title}</h4>
                     <p class="mb-3">${item.content}</p>
                 </a>
                 <div class="d-flex justify-content-between py-10 py-md-12 border-top border-bottom border-2"> 
                     <div class="d-flex">
-                        <img src="../assets/images/sparkler.png" alt="sparklerIcon" class="me-1 card__sparklerIcon">
+                        <img src="${sparklerUrl}" alt="sparklerIcon" class="me-1 card__sparklerIcon">
                         <p class="fw-bold ff-notoSerif card__sparklerText">${item.sparklerText}</p>
                     </div>
                     <a href="#" class="d-flex card__saleText">
@@ -80,6 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 </div>
             </li>
         `;
+
         return ulContent;
     });
 
