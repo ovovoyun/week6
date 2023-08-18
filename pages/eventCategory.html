@@ -10,39 +10,39 @@
 
 <body>
     <%- include('./layout/header.ejs'); -%>
-        <div class="container">
-            <section>
-                <div
-                    class="d-flex justify-content-between align-items-center px-12 px-lg-4 py-3 py-lg-32 mb-4 mb-lg-32 border border-3">
-                    <h2 class="fs-4 fs-lg-64">EVENT</h2>
-                    <p class="fs-lg-2 ff-notoSerif fw-bold">所有活動</p>
-                </div>
-                <div id="eventTagList" class="d-flex flex-wrap mb-32"></div>
-            </section>
-            <ul class="list-unstyled row row-cols-1 row-cols-lg-3 gy-4 gy-lg-5 gx-lg-4 mb-32 mb-lg-60"
-                id="recentActivityList">
-            </ul>
-        </div>
-        <nav aria-label="Page navigation example" class="d-flex justify-content-center mb-5 mb-lg-60">
-            <ul class="pagination">
-                <li class="page-item">
-                    <a class="page-link px-10" href="#" aria-label="Previous">
-                        <i class="icofont-arrow-left"></i>
-                    </a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item"><a class="page-link" href="#">4</a></li>
-                <li class="page-item"><a class="page-link" href="#">5</a></li>
-                <li class="page-item">
-                    <a class="page-link px-10" href="#" aria-label="Next">
-                        <i class="icofont-arrow-right"></i>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <%- include('./layout/footer.ejs'); -%>
-        <script type="module" src="../js/main.js"></script>
-        <script type="module" src="../js/eventCategory.js"></script>
+    <div class="container mt-3 mt-lg-32">
+        <section>
+            <div
+                class="d-flex justify-content-between align-items-center px-12 px-lg-4 py-3 py-lg-32 mb-4 mb-lg-32 border border-3">
+                <h2 class="fs-4 fs-lg-64">EVENT</h2>
+                <p class="fs-lg-2 ff-notoSerif fw-bold">所有活動</p>
+            </div>
+            <div id="eventTagList" class="d-flex flex-wrap mb-32"></div>
+        </section>
+        <ul class="list-unstyled row row-cols-1 row-cols-lg-3 gy-4 gy-lg-5 gx-lg-4 mb-32 mb-lg-60"
+            id="recentActivityList">
+        </ul>
+    </div>
+    <nav aria-label="Page navigation example" class="d-flex justify-content-center mb-5 mb-lg-60">
+        <ul class="pagination">
+            <li class="page-item">
+                <a class="page-link px-10" href="#" aria-label="Previous">
+                    <i class="icofont-arrow-left"></i>
+                </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item">
+                <a class="page-link px-10" href="#" aria-label="Next">
+                    <i class="icofont-arrow-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <%- include('./layout/footer.ejs'); -%>
+    <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/eventCategory.js"></script>
 </body>

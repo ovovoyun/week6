@@ -1,0 +1,28 @@
+.checkout{
+    &__payList{
+        &::before{
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 30%;
+            width: 83%;
+            height: 1px;
+            transform: translate(-50%, -50%);
+            background-color: $primary;
+            z-index: -10;
+        }
+    }
+
+    &__num{
+        @include size(32px, 32px);
+        background-color: $body-bg;
+
+        @include lg{
+            @include size(48px, 48px);
+        }
+    }
+
+    &__sparkleImg{
+        @include size(32px, 32px);
+    }
+}
