@@ -23,3 +23,10 @@
     }
 }
 
+.header__list{
+    a{
+        &:hover{
+            color: #9C9E18;
+        }
+    }
+}

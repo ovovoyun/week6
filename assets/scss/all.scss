@@ -11,8 +11,10 @@
 @import "./utils/mixin";
 @import "./utils/utils";
 
+//layout
+@import "./layout/header";
+
 //components
-@import "./components/header";
 @import "./components/button";
 @import "./components/card";
 @import "./components/tag";

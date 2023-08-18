@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         <img src="${sparklerUrl}" alt="sparklerIcon" class="me-1 card__sparklerIcon">
                         <p class="fw-bold ff-notoSerif card__sparklerText">${item.sparklerText}</p>
                     </div>
-                    <a href="#" class="d-flex card__saleText">
+                    <a href="#" class="d-flex card__saleText" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         <p class="fw-bold">${item.linkText}</p>
                         <span class="material-symbols-outlined ms-1">keyboard_double_arrow_right</span>
                     </a>
