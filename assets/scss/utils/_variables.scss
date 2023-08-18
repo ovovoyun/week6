@@ -1,0 +1,66 @@
+//color
+$primary: #030303;
+$secondary: #fbff22;
+$tertiary: #c96464;
+
+$theme-colors: map-merge(
+    $theme-colors,
+    (
+        "primary": $primary,
+        "secondary": $secondary,
+        "tertiary": $tertiary
+    )
+);
+
+$body-bg: #f3f1e5;
+$body-color: $primary;
+
+$input-placeholder-color: #878787;
+
+$custom-bg-disabled: #9a9a9a;
+
+//font
+$custom-fonts: "Yeseva One", "Noto Sans TC", "Noto Serif TC";
+$font-family-sans-serif:
+    #{$custom-fonts},
+    #{$font-family-sans-serif};
+
+$font-sizes: map-merge(
+    $font-sizes,
+    (
+        14: 14px,
+        18: 18px,
+        48: 48px,
+        60: 60px,
+        64: 64px
+    )
+);
+
+//space
+$spacers: map-merge(
+    $spacers,
+    (
+        10: 10px,
+        12: 12px,
+        20: 20px,
+        32: 32px,
+        36: 36px,
+        60: 60px
+    )
+);
+
+$headings-margin-bottom: 0;
+$paragraph-margin-bottom: 0;
+
+//border
+$border-color: $primary;
+
+//radius
+$enable-rounded: false;
+
+//link underline
+$link-decoration: none;
+
+//breakpoint
+$breakpoint-md: map-get($grid-breakpoints, md);
+$breakpoint-lg: map-get($grid-breakpoints, lg);

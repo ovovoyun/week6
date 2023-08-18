@@ -1,0 +1,25 @@
+.logo{
+    @include size(40px, 40px);
+
+    @include md{
+        @include size(53px, 53px);
+    }
+}
+
+.header__searchBlock{
+    max-width: 160px;
+    
+    @include md{
+        max-width: 335px;
+    }
+
+    
+    .btn-search{
+        @include size(40px, 40px);
+
+        @include md{
+            @include size(55px, 55px);
+        }
+    }
+}
+

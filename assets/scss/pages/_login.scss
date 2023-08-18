@@ -1,0 +1,5 @@
+.login{
+    &__sparkleImg{
+        @include size(32px, 32px);
+    }
+}

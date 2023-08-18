@@ -1,0 +1,41 @@
+.card{
+    &__sparklerText{
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+    &__sparklerIcon{
+        @include size(20px, 20px);
+    
+        @include lg{
+            @include size(24px, 24px);
+        }
+    }
+}
+
+.card__img{
+    height: 210px;
+    object-fit: cover;
+
+    @include lg{
+        height: 255px;
+    }
+}
+
+.card__saleText{
+    position: relative;
+    &:hover{
+        p::before{
+            content: "";
+            z-index: -10;
+            position: absolute;
+            @include size(30px, 30px);
+            transform: translate(-50%, -50%);
+            top: 50%;
+            border-radius: 100%;
+            background-color: $secondary;
+        }
+    }
+}
+

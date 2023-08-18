@@ -1,0 +1,22 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+
+//utils
+@import "./utils/variables";
+
+//bootstrap all scss
+@import "~bootstrap/scss/bootstrap";
+
+@import "./base";
+@import "./utils/mixin";
+@import "./utils/utils";
+
+//components
+@import "./components/header";
+@import "./components/button";
+@import "./components/card";
+@import "./components/tag";
+
+//pages
+@import "./pages/index";
+@import "./pages/login";
