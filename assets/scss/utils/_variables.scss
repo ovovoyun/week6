@@ -68,3 +68,14 @@ $link-decoration: none;
 //breakpoint
 $breakpoint-md: map-get($grid-breakpoints, md);
 $breakpoint-lg: map-get($grid-breakpoints, lg);
+
+//pagination
+$pagination-padding-y: .5rem;
+$pagination-padding-x: 1rem;
+$pagination-color: $primary;
+$pagination-focus-color: $secondary;
+$pagination-focus-bg: $primary;
+$pagination-focus-box-shadow: none;
+
+$pagination-hover-color: $secondary;
+$pagination-hover-bg: $primary;
