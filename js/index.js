@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const sparklerUrl = new URL("../assets/images/sparkler.png", import.meta.url).href;
 
         ulContent += `
-            <li class="col">
+            <li class="col" data-aos="zoom-in">
                 <a href="./eventDetail.html">
                     <p class="pb-2 pb-lg-12 fs-2 fs-lg-48 border-bottom border-3 mb-3 mb-lg-12">${item.date}</p>
                     <img src="${imageUrl}" alt="event${item.id}" class="img-fluid mb-2 mb-lg-12 w-100 card__img">

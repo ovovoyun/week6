@@ -99,6 +99,7 @@
 
             <section class="mb-32 mb-lg-60">
                 <div
+                    data-aos="fade-up"
                     class="d-flex justify-content-between align-items-center px-12 px-lg-4 py-3 py-lg-32 mb-4 mb-lg-32 border border-3">
                     <h2 class="fs-4 fs-lg-64">RECENT</h2>
                     <p class="fs-lg-2 ff-notoSerif fw-bold">近期活動</p>
@@ -110,6 +111,7 @@
 
             <section class="mb-32 mb-lg-60">
                 <div
+                    data-aos="fade-up"
                     class="d-flex justify-content-between align-items-center px-12 px-lg-4 py-3 py-lg-32 mb-4 mb-lg-32 border border-3">
                     <h2 class="fs-4 fs-lg-64">ONLINE</h2>
                     <p class="fs-lg-2 ff-notoSerif fw-bold">線上活動</p>
@@ -117,9 +119,9 @@
 
                 <div class="row onlineContent align-items-center">
                     <div class="col-12 col-lg-7 mb-12 mb-lg-0">
-                        <img src="../assets/images/event//online.png" alt="online" class="img-fluid w-100">
+                        <img src="../assets/images/event//online.png" alt="online" class="img-fluid w-100" data-aos="zoom-in">
                     </div>
-                    <div class="col-12 col-lg-5">
+                    <div class="col-12 col-lg-5" data-aos="fade-up">
                         <h4 class="mb-2 mb-lg-3 ff-notoSerif fw-bold fs-18 fs-lg-2">切特居批踢</h4>
                         <div class="d-flex flex-wrap mb-12 mb-lg-32">
                             <a href="#">
@@ -163,7 +165,7 @@
 
         <section class="container mb-5 mb-lg-60">
             <ul class="list-unstyled row row-cols-1 row-cols-lg-4 gy-5 gx-lg-3 albumList">
-                <li class="col d-flex justify-content-center">
+                <li class="col d-flex justify-content-center" data-aos="zoom-in">
                     <div class="p-3 pb-32 pb-lg-5 position-relative border border-2 albumList__content">
                         <h4
                             class="px-3 py-2 position-absolute top-0 start-50 translate-middle ff-notoSerif fs-6 fw-bold bg-light">
@@ -172,7 +174,7 @@
                         <p class="ff-notoSerif fs-18 fw-bold">無聲派對-閉閉嘴dancing</p>
                     </div>
                 </li>
-                <li class="col d-flex justify-content-center">
+                <li class="col d-flex justify-content-center" data-aos="zoom-in">
                     <div class="p-3 pb-32 pb-lg-5 position-relative border border-2 albumList__content">
                         <h4
                             class="px-3 py-2 position-absolute top-0 start-50 translate-middle ff-notoSerif fs-6 fw-bold bg-light">
@@ -181,7 +183,7 @@
                         <p class="ff-notoSerif fs-18 fw-bold">拯救老店大作戰</p>
                     </div>
                 </li>
-                <li class="col d-flex justify-content-center">
+                <li class="col d-flex justify-content-center" data-aos="zoom-in">
                     <div class="p-3 pb-32 pb-lg-5 position-relative border border-2 albumList__content">
                         <h4
                             class="px-3 py-2 position-absolute top-0 start-50 translate-middle ff-notoSerif fs-6 fw-bold bg-light">
@@ -190,8 +192,7 @@
                         <p class="ff-notoSerif fs-18 fw-bold">內觀修行-部落篇</p>
                     </div>
                 </li>
-
-                <li class="col d-flex justify-content-center">
+                <li class="col d-flex justify-content-center" data-aos="zoom-in">
                     <div class="p-3 pb-32 pb-lg-5 position-relative border border-2 albumList__content">
                         <h4
                             class="px-3 py-2 position-absolute top-0 start-50 translate-middle ff-notoSerif fs-6 fw-bold bg-light">
@@ -213,7 +214,7 @@
             </div>
         </section>
 
-        <div class="container mb-5 mb-lg-60">
+        <div class="container mb-5 mb-lg-60" data-aos="fade-up">
             <div class="row row-cols-1 row-cols-lg-2 gy-4 gx-lg-0">
                 <div class="col">
                     <div class="border border-2">
@@ -269,8 +270,8 @@
         </div>
 
         <section class="py-5 py-lg-60 border-top border-3 text-center">
-            <h3 class="mb-12 mb-lg-3 ff-notoSerif fw-bold fs-18 fs-lg-2">此刻打盹，你將做夢；此刻學習，你將圓夢</h3>
-            <p class="ff-notoSerif fw-bold fs-14 fs-lg-18">——我也不知道誰說的</p>
+            <h3 class="mb-12 mb-lg-3 ff-notoSerif fw-bold fs-18 fs-lg-2" data-aos="fade-up">此刻打盹，你將做夢；此刻學習，你將圓夢</h3>
+            <p class="ff-notoSerif fw-bold fs-14 fs-lg-18" data-aos="fade-up">——我也不知道誰說的</p>
         </section>
 
         <%- include('./layout/footer.ejs'); -%>
@@ -303,4 +304,8 @@
         <script type="module" src="../js/swiper.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
+        <!-- AOs -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="../js/aos.js"></script>
+        
 </html>
