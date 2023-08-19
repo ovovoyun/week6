@@ -83,3 +83,8 @@ $pagination-hover-bg: $primary;
 //modal
 $modal-md: 636px;
 $modal-content-bg: $light;
+
+//shadow
+$btn-close-focus-shadow: none;
+$input-focus-border-color: lighten($primary, 80%);
+$input-focus-box-shadow: none;

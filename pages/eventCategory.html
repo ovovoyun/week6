@@ -43,6 +43,27 @@
         </ul>
     </nav>
     <%- include('./layout/footer.ejs'); -%>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-custom">
+            <div class="modal-content">
+                <div class="modal-header border-3">
+                    <h5 class="modal-title w-100 text-center fs-4" id="exampleModalLabel">立即成為7TAO會員</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body py-32 py-lg-5 text-center">
+                    <p class="mb-4 ff-notoSans">
+                        立刻成為七逃會員，加速活動報名流程並取得活動優惠資訊。
+                        您也可以先報名活動，日後再註冊帳號，
+                        系統會在認證您的Email後，協助您找回舊的訂單。
+                    </p>
+                    <button type="button" class="btn btn-primary py-2 px-32">立即成為會員</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script type="module" src="../js/main.js"></script>
     <script type="module" src="../js/eventCategory.js"></script>
 </body>
