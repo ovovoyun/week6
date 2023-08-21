@@ -56,19 +56,28 @@
                 </section>
             </div>
 
-            <form>
+            <form class="needs-validation" novalidate>
                 <div class="col-lg-6 mx-auto">
-                    <div class="mb-3">
+                    <div class="form-group mb-3">
                         <label for="userName" class="form-label">聯絡人姓名</label>
-                        <input type="text" class="form-control border-2 px-3 py-2" id="userName" placeholder="請輸入聯絡人名稱">
+                        <input type="text" class="form-control border-2 px-3 py-2 ff-notoSans" id="userName" placeholder="請輸入聯絡人名稱" required>
+                        <div class="invalid-feedback">
+                            請輸入聯絡人名稱
+                        </div>
                     </div>
-                    <div class="mb-3 ff-notoSans">
+                    <div class="form-group mb-3 ff-notoSans">
                         <label for="userEmail" class="form-label">Email</label>
-                        <input type="email" class="form-control border-2 px-3 py-2" id="userEmail" placeholder="請輸入Email">
+                        <input type="email" class="form-control border-2 px-3 py-2" id="userEmail" placeholder="請輸入Email" required>
+                        <div class="invalid-feedback">
+                            請輸入Email
+                        </div>
                     </div>
-                    <div class="mb-3">
+                    <div class="form-group mb-3">
                         <label for="userPhone" class="form-label">手機</label>
-                        <input type="text" class="form-control border-2 px-3 py-2" id="userPhone" placeholder="請輸入手機號碼">
+                        <input type="text" class="form-control border-2 px-3 py-2 ff-notoSans" id="userPhone" placeholder="請輸入手機號碼" required>
+                        <div class="invalid-feedback">
+                            請輸入手機號碼
+                        </div>
                     </div>
                 </div>
                 
@@ -89,4 +98,5 @@
     </div>
     <%- include('./layout/footer.ejs'); -%>
     <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/form.js"></script>
 </body>
