@@ -20,8 +20,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
 
 <!-- AOS -->
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">  <script type="module" crossorigin src="/week6/assets/payment-a2604f27.js"></script>
-  <link rel="stylesheet" href="/week6/assets/payment-05c7953f.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">  <script type="module" crossorigin src="/week6/assets/payment-fa3a975d.js"></script>
+  <link rel="modulepreload" crossorigin href="/week6/assets/orderSuccess-c9e9d8fc.js">
 </head>
 
 <body>
@@ -138,16 +138,19 @@
                 </section>
             </div>
             
-            <form>
+            <form class="needs-validation" novalidate>
                 <div class="col-lg-7 mx-auto">
-                    <div class="mb-3">
+                    <div class="form-group mb-3">
                         <label for="userId" class="form-label">取票資訊</label>
-                        <input type="text" class="form-control border-2 px-3 py-2" id="userId"
-                            aria-describedby="userIdHelp" placeholder="請輸入身分證字號或護照號碼">
+                        <input type="text" class="form-control border-2 px-3 py-2 ff-notoSans" id="userId"
+                            aria-describedby="userIdHelp" placeholder="請輸入身分證字號或護照號碼" required>
                         <small id="userIdHelp" class="form-text text-muted">
                             請輸入您的 <span class="text-danger">身分證字號</span> 供取票使用，外籍人士請輸入 <span
                                 class="text-danger">護照號碼</span>
                         </small>
+                        <div class="invalid-feedback">
+                            請輸入取票資訊
+                        </div>
                     </div>
                     <div>
                         <label class="form-label">付款方式</label>
@@ -184,4 +187,5 @@
     <footer class="py-4 py-lg-32 text-center border-top border-3">
     <p class="ff-notoSans fs-14 fs-lg-6">© 7TAO七逃. All Rights Reserved</p>
 </footer>    
+    
 </body>

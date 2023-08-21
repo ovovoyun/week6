@@ -20,10 +20,11 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
 
 <!-- AOS -->
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">  <script type="module" crossorigin src="/week6/assets/index-3d827336.js"></script>
-  <link rel="modulepreload" crossorigin href="/week6/assets/payment-a2604f27.js">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">  <script type="module" crossorigin src="/week6/assets/index-bcba3f80.js"></script>
+  <link rel="modulepreload" crossorigin href="/week6/assets/orderSuccess-c9e9d8fc.js">
   <link rel="modulepreload" crossorigin href="/week6/assets/13-15e77186.js">
-  <link rel="stylesheet" href="/week6/assets/payment-05c7953f.css">
+  <link rel="modulepreload" crossorigin href="/week6/assets/payment-fa3a975d.js">
+  <link rel="stylesheet" href="/week6/assets/orderSuccess-05c7953f.css">
 </head>
 
 <body>
@@ -246,7 +247,7 @@
 
         <section class="container mb-5 mb-lg-60">
             <ul class="list-unstyled row row-cols-1 row-cols-lg-4 gy-5 gx-lg-3 albumList">
-                <li class="col d-flex justify-content-center" data-aos="zoom-in">
+                <li class="col d-flex justify-content-center">
                     <div class="p-3 pb-32 pb-lg-5 position-relative border border-2 albumList__content">
                         <h4
                             class="px-3 py-2 position-absolute top-0 start-50 translate-middle ff-notoSerif fs-6 fw-bold bg-light">
@@ -255,7 +256,7 @@
                         <p class="ff-notoSerif fs-18 fw-bold">無聲派對-閉閉嘴dancing</p>
                     </div>
                 </li>
-                <li class="col d-flex justify-content-center" data-aos="zoom-in">
+                <li class="col d-flex justify-content-center">
                     <div class="p-3 pb-32 pb-lg-5 position-relative border border-2 albumList__content">
                         <h4
                             class="px-3 py-2 position-absolute top-0 start-50 translate-middle ff-notoSerif fs-6 fw-bold bg-light">
@@ -264,7 +265,7 @@
                         <p class="ff-notoSerif fs-18 fw-bold">拯救老店大作戰</p>
                     </div>
                 </li>
-                <li class="col d-flex justify-content-center" data-aos="zoom-in">
+                <li class="col d-flex justify-content-center">
                     <div class="p-3 pb-32 pb-lg-5 position-relative border border-2 albumList__content">
                         <h4
                             class="px-3 py-2 position-absolute top-0 start-50 translate-middle ff-notoSerif fs-6 fw-bold bg-light">
@@ -273,7 +274,7 @@
                         <p class="ff-notoSerif fs-18 fw-bold">內觀修行-部落篇</p>
                     </div>
                 </li>
-                <li class="col d-flex justify-content-center" data-aos="zoom-in">
+                <li class="col d-flex justify-content-center">
                     <div class="p-3 pb-32 pb-lg-5 position-relative border border-2 albumList__content">
                         <h4
                             class="px-3 py-2 position-absolute top-0 start-50 translate-middle ff-notoSerif fs-6 fw-bold bg-light">
@@ -335,9 +336,14 @@
                             <p class="mb-3 mb-lg-32">
                                 訂閱電子報送折價券！ 定期精選文章資訊及最新優惠資訊， 還不通通給我訂閱起來？
                             </p>
-                            <form action="#" class="subscribe__form">
-                                <input type="email" class="ps-4 py-3 form-control ff-notoSans border-2"
-                                    id="exampleInputEmail1" placeholder="輸入email" required>
+                            <form action="#" class="subscribe__form needs-validation" novalidate>
+                                <div class="form-group">
+                                    <input type="email" class="ps-4 py-3 form-control ff-notoSans border-2"
+                                        id="exampleInputEmail1" placeholder="輸入email" required>
+                                    <div class="invalid-feedback ff-notoSans">
+                                        請輸入Email
+                                    </div>
+                                </div>
                                 <button type="submit"
                                     class="btn btn-primary position-absolute bottom-0 d-flex justify-content-center align-items-center w-100 py-3 py-lg-2 fs-lg-20 subscribe__submitBtn">
                                     <p class="me-1 fw-bold">確認訂閱</p>
@@ -379,6 +385,7 @@
             </div>
         </div>
 
+        
         
         
 
