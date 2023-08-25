@@ -1,4 +1,4 @@
-import"./orderSuccess-c9e9d8fc.js";import{_ as g,a as o,b as d,c as _,d as c,e as m,f as p,g as v,h as k,i as x,j as b,k as f,l as T}from"./13-15e77186.js";document.addEventListener("DOMContentLoaded",function(){let a=["演出","音樂","舞蹈","戲劇","音樂會","課程講座","社群活動","展覽","研討會","電影","電音派對","遊戲競賽","親子","藝文活動","運動","交通旅遊","美食","資訊科技","聯誼","戶外","線上活動"];const s=document.getElementById("eventTagList");let l="";a.forEach(e=>{l+=`
+import"./orderSuccess-8fb678ad.js";import{_ as g,a as o,b as d,c as _,d as c,e as m,f as p,g as v,h as k,i as x,j as b,k as f,l as T}from"./13-15e77186.js";document.addEventListener("DOMContentLoaded",function(){let a=["演出","音樂","舞蹈","戲劇","音樂會","課程講座","社群活動","展覽","研討會","電影","電音派對","遊戲競賽","親子","藝文活動","運動","交通旅遊","美食","資訊科技","聯誼","戶外","線上活動"];const s=document.getElementById("eventTagList");let l="";a.forEach(e=>{l+=`
             <a href="#">
                 <span class="badge me-2 mb-2 px-3 px-lg-4 py-lg-1 text-primary fs-14 fs-lg-6 fw-bold ff-notoSerif">${e}</span>
             </a>
