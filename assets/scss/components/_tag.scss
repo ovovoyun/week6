@@ -1,31 +1,3 @@
-// .tagList {
-//     &__checkbox {
-//         display: none;
-//     }
-
-//     .tagList__item{
-//         position: relative;
-//         border-left: 4px solid $black;
-//     }
-
-//     .tagList__item:hover, .tagList__item.active, .tag-checkbox:checked + .tagList__item {
-//         background-color: $primary;
-//         color: $white !important;
-
-//         &::before {
-//             position: absolute;
-//             content: "";
-//             width: 4px;
-//             background-color: $secondary;
-//             height: calc(100% + 4px);
-//             top: -2px;
-//             left: -4px;
-//         }
-//     }
-// }
-
-
-
 .tagList {
     &__checkbox{
         display: none;

@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <li>
                 <label>
                     <input type="checkbox" class="tagList__checkbox">
-                    <p class="tagList__item btn btn-outline-primary me-2 mb-2 px-3 px-lg-4 py-lg-1 fs-14 fs-lg-6 fw-bold ff-notoSerif">
+                    <p class="tagList__item btn btn-outline-primary me-2 mb-2 px-3 px-lg-4 py-1 fs-14 fs-lg-6 fw-bold ff-notoSerif">
                         ${item}
                     </p>
                 </label>
