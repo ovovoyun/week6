@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <h4 class="mb-2 mb-lg-12 fs-18 fs-lg-4 fw-bold ff-notoSerif">${item.title}</h4>
                     <p class="mb-3">${item.content}</p>
                 </a>
-                <div class="d-flex justify-content-between py-10 py-lg-12 border-top border-bottom border-2"> 
+                <div class="d-flex justify-content-between align-items-center py-10 py-lg-12 border-top border-bottom border-2"> 
                     <div class="d-flex">
                         <img src="${sparklerUrl}" alt="sparklerIcon" class="me-1 card__sparklerIcon">
                         <p class="fw-bold ff-notoSerif card__sparklerText">${item.sparklerText}</p>

@@ -7,10 +7,10 @@
 }
 
 .header__searchBlock{
-    max-width: 160px;
+    width: 207px;
     
     @include lg{
-        max-width: 335px;
+        width: 355px;
     }
 
     

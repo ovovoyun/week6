@@ -15,9 +15,20 @@ $theme-colors: map-merge(
 $body-bg: #f3f1e5;
 $body-color: $primary;
 
+$custom-bg-disabled: #9a9a9a;
+
+//form
 $input-placeholder-color: #878787;
 
-$custom-bg-disabled: #9a9a9a;
+$btn-close-focus-shadow: none;
+$input-focus-border-color: lighten($primary, 80%);
+$input-focus-box-shadow: none;
+
+$form-invalid-color: $tertiary;
+$form-invalid-border-color: $tertiary;
+
+$form-check-input-checked-bg-color: $primary;
+$form-check-input-checked-border-color: $primary;
 
 //font
 $custom-fonts: "Yeseva One", "Noto Sans TC", "Noto Serif TC";
@@ -70,9 +81,11 @@ $breakpoint-md: map-get($grid-breakpoints, md);
 $breakpoint-lg: map-get($grid-breakpoints, lg);
 
 //pagination
-$pagination-padding-y: .5rem;
-$pagination-padding-x: 1rem;
+$pagination-padding-y: 0rem;
+$pagination-padding-x: 0.5rem;
+$pagination-margin-start: 0.5rem;
 $pagination-color: $primary;
+
 $pagination-focus-color: $secondary;
 $pagination-focus-bg: $primary;
 $pagination-focus-box-shadow: none;
@@ -83,8 +96,3 @@ $pagination-hover-bg: $primary;
 //modal
 $modal-md: 636px;
 $modal-content-bg: $light;
-
-//shadow
-$btn-close-focus-shadow: none;
-$input-focus-border-color: lighten($primary, 80%);
-$input-focus-box-shadow: none;
